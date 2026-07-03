@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage student records with search, filters, and statistics.">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="page-header">
+            <h1>Student Management System</h1>
+            <p class="subtitle">Add, search, filter, and manage student records</p>
+        </header>
+
+        <section class="panel" aria-labelledby="form-heading">
+            <h2 id="form-heading" class="section-title">Student Details</h2>
+
+            <form id="studentForm" novalidate>
+                <input type="hidden" id="editId" value="">
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="studentId">Student ID</label>
+                        <input type="text" id="studentId" name="studentId" placeholder="e.g. STU001" required
+                            autocomplete="off" pattern="[A-Za-z0-9_-]+" title="Letters, numbers, hyphens, underscores">
+                    </div>
+
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Full name" required autocomplete="name">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required
+                            autocomplete="email">
+                    </div>
+
+                    <div class="field">
+                        <label for="mobile">Mobile</label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="10-digit number" required
+                            pattern="[0-9]{10}" title="Enter a 10-digit mobile number" autocomplete="tel">
+                    </div>
+
+                    <div class="field">
+                        <label for="course">Course</label>
+                        <input type="text" id="course" name="course" placeholder="e.g. Computer Science" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" placeholder="0–100" required min="5" max="100">
+                    </div>
+
+                    <div class="field">
+                        <label for="percentage">Percentage</label>
+                        <input type="number" id="percentage" name="percentage" placeholder="0–100" required min="0"
+                            max="100" step="0.01">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="submitBtn" class="btn btn-primary">💾 Save Student</button>
+                    <button type="button" id="deleteLastBtn" class="btn btn-delete-last">🗑️ Delete Last</button>
+                    <button type="button" id="cancelBtn" class="btn btn-secondary hidden">Cancel Edit</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel" aria-labelledby="controls-heading">
+            <h2 id="controls-heading" class="section-title">Search &amp; Filters</h2>
+
+            <div class="search-bar">
+                <label for="search" class="visually-hidden">Search students</label>
+                <input type="search" id="search" placeholder="Search by name, ID, or course…" autocomplete="off">
+            </div>
+
+            <div class="toolbar">
+                <div class="toolbar-group" role="group" aria-label="Filters">
+                    <span class="toolbar-label">Filter</span>
+                    <button type="button" class="btn btn-filter" data-filter="percentage">Percentage &gt; 75</button>
+                    <button type="button" class="btn btn-filter" data-filter="age">Age &gt; 20</button>
+                    <button type="button" class="btn btn-filter active" data-filter="all">Show All</button>
+                </div>
+
+                <div class="toolbar-group" role="group" aria-label="Sort options">
+                    <span class="toolbar-label">Sort</span>
+                    <button type="button" class="btn btn-sort" data-sort="name">Name</button>
+                    <button type="button" class="btn btn-sort" data-sort="age">Age</button>
+                    <button type="button" class="btn btn-sort" data-sort="percentage">Percentage</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats" aria-live="polite" aria-atomic="true">
+            <div class="stat-card">
+                <span class="stat-label">Total Students</span>
+                <span class="stat-value" id="totalStudents">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Average Percentage</span>
+                <span class="stat-value" id="avgPercentage">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Showing</span>
+                <span class="stat-value" id="showingCount">0</span>
+            </div>
+        </section>
+
+        <section class="panel table-panel" aria-labelledby="table-heading">
+            <h2 id="table-heading" class="section-title">Student List</h2>
+
+            <!-- Select All / Delete Selected Toolbar -->
+            <div class="table-toolbar">
+                <div class="table-toolbar-left">
+                    <input type="checkbox" id="selectAll" onchange="toggleAllCheckboxes()">
+                    <label for="selectAll">Select All</label>
+                </div>
+                <div class="table-toolbar-right">
+                    <button type="button" class="btn btn-delete-selected" onclick="deleteSelected()" id="deleteSelectedBtn">
+                        🗑️ Delete Selected (<span id="selectedCount">0</span>)
+                    </button>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 40px;">
+                                <input type="checkbox" id="selectAllHeader" onchange="toggleAllCheckboxes()">
+                            </th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Mobile</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Percentage</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
