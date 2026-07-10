@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Assignment 4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="pricing-container">
+    <header class="pricing-header">
+      <h1>Our Pricing Plans</h1>
+      <p>Choose a plan that fits your scaling needs.</p>
+
+      <!-- Fake Toggle Switch Switcher -->
+      <div class="toggle-wrapper">
+        <span>Monthly</span>
+        <label class="switch">
+          <input type="checkbox" checked />
+          <span class="slider"></span>
+        </label>
+        <span>Annually</span>
+      </div>
+    </header>
+
+    <section class="pricing-grid">
+      <!-- Card 1 -->
+      <div class="price-card">
+        <h3>Starter</h3>
+        <div class="price">$19<span>/mo</span></div>
+        <ul class="features">
+          <li>1 User Allowed</li>
+          <li>10 GB Storage</li>
+          <li>Basic Support</li>
+        </ul>
+        <button class="btn btn-secondary">Get Started</button>
+      </div>
+
+      <!-- Card 2 (Featured) -->
+      <div class="price-card featured">
+        <span class="badge">Most Popular</span>
+        <h3>Pro</h3>
+        <div class="price">$49<span>/mo</span></div>
+        <ul class="features">
+          <li>5 Users Allowed</li>
+          <li>50 GB Storage</li>
+          <li>Priority Email Support</li>
+        </ul>
+        <button class="btn btn-primary">Upgrade Now</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="price-card">
+        <h3>Enterprise</h3>
+        <div class="price">$99<span>/mo</span></div>
+        <ul class="features">
+          <li>Unlimited Users</li>
+          <li>500 GB Storage</li>
+          <li>24/7 Phone Support</li>
+        </ul>
+        <button class="btn btn-secondary">Contact Us</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
