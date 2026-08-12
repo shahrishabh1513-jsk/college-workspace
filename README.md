@@ -87,7 +87,7 @@ This repository exists to keep everything in one place: a single source of truth
 <img src="https://img.shields.io/badge/⚙️_DevOps_%26_Agile_Foundation-35586B?style=for-the-badge&logoColor=white"/>
 </a>
 
-<br/><br/>
+<br/>
 
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace/tree/main/Full%20Stack%20Development">
 <img src="https://img.shields.io/badge/💻_Full_Stack_Development-3E7387?style=for-the-badge&logoColor=white"/>
