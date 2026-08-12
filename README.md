@@ -9,7 +9,7 @@
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace"><img src="https://img.shields.io/badge/📂_REPOSITORY-View_All_Files-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace/stargazers"><img src="https://img.shields.io/badge/⭐_STAR_REPO-4CA1AF?style=for-the-badge&logoColor=white"/></a>
 
-<br/><br/>
+<br/>
 
 <img src="https://img.shields.io/badge/B.Sc._IT-2C3E50?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Academic_Repository-4CA1AF?style=for-the-badge"/>
