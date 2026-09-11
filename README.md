@@ -2,7 +2,6 @@
 
 <img align="right" src="https://github.com/user-attachments/assets/41de0edc-f0a3-474a-9156-d8b3d10d41ba" width="140" alt="Shah Rishabh badge logo"/>
 <img align="left" src="https://github.com/user-attachments/assets/90c19f97-8b0b-4df1-96c4-a288d337503c" width="140" alt="Shah Rishabh badge logo"/>
-
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=4CA1AF&center=true&vCenter=true&width=750&lines=Notes+%7C+Assignments+%7C+Practicals+%7C+Projects;Organized+Subject-Wise+for+Easy+Access;B.Sc.+Information+Technology+%40+P.P.+Savani+University" alt="Typing SVG" />
 
 <br/>
