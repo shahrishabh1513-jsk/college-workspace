@@ -23,7 +23,7 @@
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace"><img src="https://img.shields.io/badge/📂_REPOSITORY-View_All_Files-003049?style=for-the-badge&logo=github&logoColor=white"/></a>
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace/stargazers"><img src="https://img.shields.io/badge/⭐_STAR_REPO-Support_This_Repo-F77F00?style=for-the-badge&logoColor=black"/></a>
 
-<br/><br/>
+<br/>
 
 <img src="https://img.shields.io/badge/B.Sc._IT-003049?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Academic_Repository-D62828?style=for-the-badge"/>
@@ -68,7 +68,7 @@
 
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace/tree/main/Cryptography%20%26%20Network%20Security"><img src="https://img.shields.io/badge/🔐_Cryptography_%26_Network_Security-D62828?style=for-the-badge"/></a>
 
-<br/><br/>
+<br/>
 
 Encryption, security protocols and network defence.
 
@@ -81,7 +81,7 @@ Encryption, security protocols and network defence.
 
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace/tree/main/DevOps%20And%20Agile%20Foundation"><img src="https://img.shields.io/badge/⚙️_DevOps_%26_Agile_Foundation-F77F00?style=for-the-badge"/></a>
 
-<br/><br/>
+<br/>
 
 Agile methodology, CI/CD concepts and DevOps tools.
 
@@ -94,7 +94,7 @@ Agile methodology, CI/CD concepts and DevOps tools.
 
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace/tree/main/Full%20Stack%20Development"><img src="https://img.shields.io/badge/💻_Full_Stack_Development-003049?style=for-the-badge"/></a>
 
-<br/><br/>
+<br/>
 
 Front-end and back-end coursework, practicals and projects.
 
@@ -109,7 +109,7 @@ Front-end and back-end coursework, practicals and projects.
 
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace/tree/main/Image%20Processing"><img src="https://img.shields.io/badge/🖼️_Image_Processing-FCBF49?style=for-the-badge&logoColor=black"/></a>
 
-<br/><br/>
+<br/>
 
 Digital image processing concepts, algorithms and practicals.
 
@@ -122,7 +122,7 @@ Digital image processing concepts, algorithms and practicals.
 
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace/tree/main/ESE%20EXAM%20IMP"><img src="https://img.shields.io/badge/📝_ESE_EXAM_IMP-EAE2B7?style=for-the-badge"/></a>
 
-<br/><br/>
+<br/>
 
 Important topics and revision material for the ESE exam.
 
@@ -135,7 +135,7 @@ Important topics and revision material for the ESE exam.
 
 <a href="https://github.com/shahrishabh1513-jsk/college-workspace"><img src="https://img.shields.io/badge/📂_Browse_All_Files-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-<br/><br/>
+<br/>
 
 See every folder in the repository at a glance.
 
