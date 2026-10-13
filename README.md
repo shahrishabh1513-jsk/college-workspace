@@ -57,7 +57,6 @@
 
 ## 📚 Subject Folders
 
-<div align="center"><sub>Tap a button to jump straight into that subject's folder.</sub></div>
 
 <br/>
 
